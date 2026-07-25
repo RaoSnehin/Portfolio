@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehin Rao — CS Engineer | AI Specialist</title>
+  <meta name="description" content="Portfolio of Snehin Rao — Computer Science Engineering (AI) student at Amrita Vishwa Vidyapeetham. Skilled in Python, Java, and Artificial Intelligence." />
+  <meta name="keywords" content="Snehin Rao, portfolio, computer science, AI, software engineer, Python, Java, placement" />
+  <meta name="author" content="Snehin Rao" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Snehin Rao — CS Engineer | AI Specialist" />
+  <meta property="og:description" content="Portfolio of Snehin Rao — CS Engineering (AI) student. Expert in Python, Java, and Artificial Intelligence." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Canvas for particle background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Achievements</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" download class="btn-resume" id="nav-resume-btn">
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting" id="hero-greeting">Hello, World! 👋</p>
+        <h1 class="hero-name">
+          I'm <span class="gradient-text">Snehin Rao</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">— </span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          CS Engineering (AI) student at <span class="highlight">Amrita Vishwa Vidyapeetham</span>, passionate about building artificial intelligence systems, computer vision models, and elegant software solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/snehin-rao-b8174728a/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:snehinrao1930@gmail.com" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <img src="avatar.png" alt="Snehin Rao" class="avatar-img" id="hero-avatar" />
+          <div class="avatar-badge">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Computer Science Engineering (AI)</strong> student at Amrita Vishwa Vidyapeetham, Bengaluru — driven by a deep passion for <em>software engineering, artificial intelligence,</em> and <em>intelligent applications</em>.
+          </p>
+          <p>
+            My academic journey has given me strong foundations in <strong>object-oriented programming, algorithms, and machine learning</strong>. I enjoy turning complex problems into elegant, high-performance software solutions — from traffic simulation engines to predictive analytics pipelines.
+          </p>
+          <p>
+            I thrive at the intersection of <strong>engineering rigor and creative problem-solving</strong>, and I'm actively seeking placement opportunities where I can build real-world impact.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card glass">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num">8.00</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num">AI</span>
+              <span class="stat-label">Specialization</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card glass">
+          <div class="about-card-header">
+            <i class="fas fa-terminal"></i>
+            <span>snehin@portfolio:~$</span>
+          </div>
+          <div class="about-terminal">
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+            <div class="terminal-line t-out">Snehin Rao</div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></div>
+            <div class="terminal-line t-out">CS Eng (AI) @ Amrita, Bengaluru</div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">echo $STATUS</span></div>
+            <div class="terminal-line t-out t-green">Open to Placements ✓</div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat interests.json</span></div>
+            <div class="terminal-line t-out">{</div>
+            <div class="terminal-line t-out">&nbsp;&nbsp;"focus": "Artificial Intelligence",</div>
+            <div class="terminal-line t-out">&nbsp;&nbsp;"loves": "Clean Code",</div>
+            <div class="terminal-line t-out">&nbsp;&nbsp;"goal": "Create Smart Solutions"</div>
+            <div class="terminal-line t-out">}</div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="cursor-blink-term">█</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid reveal">
+
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="90">Python</span>
+            <span class="skill-tag" data-level="82">Java</span>
+            <span class="skill-tag" data-level="75">SQL</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span>82%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>SQL</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Core CS</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">DBMS</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>OOP</span><span>92%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>DSA</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>DBMS</span><span>78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Git / Docker</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>PyTorch / TensorFlow</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Kubernetes</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Debugging</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Machine Learning</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Deep Learning</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Problem Solving</span><span>88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Retinal Image Classification (Featured AI) -->
+        <div class="project-card glass featured" data-category="ai">
+          <div class="featured-badge">Published · AIEI 2026</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-eye"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Retinal Image Classification</h3>
+            <p>High-performance deep learning framework for <strong>multi-class retinal disease classification</strong> from fundus images. Built on a ResNet50 backbone integrated with CBAM, SE, SimAM &amp; ECA attention mechanisms. Fine-tuned with AdamW; benchmarked against MobileNet_v2 and DenseNet201. <strong>Accepted at AIEI 2026 conference.</strong></p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">PyTorch</span>
+              <span class="proj-tag">ResNet50</span>
+              <span class="proj-tag">CBAM</span>
+              <span class="proj-tag">Deep Learning</span>
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+        </div>
+
+        <!-- Recallr -->
+        <div class="project-card glass" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Recallr — AI Knowledge Assistant</h3>
+            <p>AI-powered learning assistant providing <strong>precise knowledge retrieval</strong> across technical domains. Implements modular search spaces including <strong>Academic RAG</strong>, code assistance, math parsing, and web queries. Uses a hybrid retrieval architecture fusing semantic vector search with keyword search. Validated with LLM-as-a-Judge, BERTScore, BLEU &amp; ROUGE metrics.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">RAG</span>
+              <span class="proj-tag">LLM</span>
+              <span class="proj-tag">BERTScore</span>
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+        </div>
+
+        <!-- Wildlife Intrusion Detection -->
+        <div class="project-card glass" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-paw"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Smart Wildlife Intrusion Detection</h3>
+            <p>Real-time edge surveillance system detecting 5 animal classes using <strong>dual YOLO models</strong> (YOLOv11s + YOLOv8n). Features Temporal Ensemble Scoring (S=0.35·Temp + 0.25·Freq + 0.25·Cov + 0.15·Conf), Euclidean distance estimation, and a 15-frame cooling gap achieving <strong>0% Alert Noise Ratio</strong>.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">YOLOv11</span>
+              <span class="proj-tag">OpenCV</span>
+              <span class="proj-tag">Streamlit</span>
+              <span class="proj-tag">Python</span>
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+        </div>
+
+        <!-- Legal BERT -->
+        <div class="project-card glass" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-balance-scale"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Legal BERT — Text Classification</h3>
+            <p>Domain-specific classification engine for complex <strong>legal text and document hierarchies</strong> using Legal-BERT — a transformer pre-trained on contracts, cases, and legislation. Captures specialized legal semantics that generic language models miss.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">PyTorch</span>
+              <span class="proj-tag">HuggingFace</span>
+              <span class="proj-tag">NLP</span>
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+        </div>
+
+        <!-- ArogyaDham -->
+        <div class="project-card glass" data-category="web">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>ArogyaDham — Unified Healthcare Platform</h3>
+            <p>Responsive <strong>multi-page healthcare platform</strong> integrating organ donation registration, blood donation matching, ambulance booking, and doctor appointment scheduling. Designed for accessibility and <strong>full cross-device compatibility</strong>.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+            <span class="project-date">Apr 2024</span>
+          </div>
+        </div>
+
+        <!-- Opportunity Quest -->
+        <div class="project-card glass" data-category="web">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Opportunity Quest — Career Platform</h3>
+            <p>Full-stack web platform integrating <strong>real-time job &amp; internship listings</strong> via REST APIs with secure JWT-based authentication. Interactive dashboards deliver data-driven career insights and analytical visualizations to guide student decisions.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Django</span>
+              <span class="proj-tag">REST APIs</span>
+              <span class="proj-tag">JWT</span>
+            </div>
+            <span class="project-date">Nov 2024</span>
+          </div>
+        </div>
+
+        <!-- Cross-Asset -->
+        <div class="project-card glass" data-category="systems">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Cross-Asset Crypto Analytics Framework</h3>
+            <p>Processed millions of <strong>live Binance cryptocurrency records</strong> using Hadoop &amp; PySpark for large-scale data normalization. Implemented Spark Window operations, MLlib regression analytics, and interactive dashboard visualizations.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Hadoop</span>
+              <span class="proj-tag">PySpark</span>
+              <span class="proj-tag">Binance API</span>
+            </div>
+            <span class="project-date">May 2026</span>
+          </div>
+        </div>
+
+        <!-- Energy Harvesting -->
+        <div class="project-card glass" data-category="systems">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-bolt"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Energy Harvesting in Cloud Systems</h3>
+            <p>Containerized framework for <strong>green cloud energy harvesting</strong> and workload orchestration. Applied the <strong>NSGA-II multi-objective evolutionary algorithm</strong> for Pareto-optimal resource scheduling across Docker/Kubernetes clusters under varying loads.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">NSGA-II</span>
+              <span class="proj-tag">Docker</span>
+              <span class="proj-tag">Kubernetes</span>
+            </div>
+            <span class="project-date">Nov 2025</span>
+          </div>
+        </div>
+
+        <!-- Traffic Congestion -->
+        <div class="project-card glass" data-category="systems">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Traffic Congestion Simulation</h3>
+            <p>Multi-agent traffic simulation powered by <strong>AutoGen Agentic Framework</strong> for adaptive lane management and congestion reduction. Integrated SQL storage with Pygame visualization; research led to a <strong>Springer ICSCI 2025 publication</strong>.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">AutoGen</span>
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Pygame</span>
+              <span class="proj-tag">SQL</span>
+            </div>
+            <span class="project-date">Nov 2024</span>
+          </div>
+        </div>
+
+        <!-- CloudSculpt -->
+        <div class="project-card glass" data-category="systems">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>CloudSculpt — Word Cloud Generator</h3>
+            <p>Java application for text processing and frequency analysis built on solid <strong>OOP principles</strong>. Designed modular components for input processing, word-frequency visualization, and a Java Swing GUI.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="proj-tag">Java</span>
+              <span class="proj-tag">Swing</span>
+              <span class="proj-tag">OOP</span>
+            </div>
+            <span class="project-date">Mar 2024</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-badge current">Current</div>
+            <h3>B.Tech Computer Science & Engineering (AI)</h3>
+            <p class="timeline-institution"><i class="fas fa-university"></i> Amrita Vishwa Vidyapeetham, Bengaluru</p>
+            <p class="timeline-period"><i class="fas fa-calendar-alt"></i> Jul 2023 — Present</p>
+            <div class="timeline-meta">
+              <span class="meta-chip"><i class="fas fa-star"></i> CGPA: 8.00</span>
+              <span class="meta-chip"><i class="fas fa-microchip"></i> AI Specialization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <h3>Class XII</h3>
+            <p class="timeline-institution"><i class="fas fa-school"></i> Narayana Jr. College, Hyderabad</p>
+            <p class="timeline-period"><i class="fas fa-calendar-alt"></i> 2023</p>
+            <div class="timeline-meta">
+              <span class="meta-chip"><i class="fas fa-award"></i> 87%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <h3>Class X</h3>
+            <p class="timeline-institution"><i class="fas fa-school"></i> VRS & VJ Residential School, Hyderabad</p>
+            <p class="timeline-period"><i class="fas fa-calendar-alt"></i> 2021</p>
+            <div class="timeline-meta">
+              <span class="meta-chip"><i class="fas fa-award"></i> 84%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Achievements</span>
+        <h2 class="section-title">Certifications & Highlights</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid reveal">
+
+        <div class="cert-card glass featured">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-body">
+            <h3>Google Cloud Cybersecurity Certificate</h3>
+            <p>Google</p>
+            <span class="cert-year">2026</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <div class="cert-body">
+            <h3>AWS Academy Cloud Foundations</h3>
+            <p>Amazon Web Services</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-eye"></i></div>
+          <div class="cert-body">
+            <h3>Computer Vision Fundamentals</h3>
+            <p>Great Learning</p>
+            <span class="cert-year">2026</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-flask"></i></div>
+          <div class="cert-body">
+            <h3>Live-in-Labs Program</h3>
+            <p>Amrita Vishwa Vidyapeetham — Selected</p>
+            <span class="cert-year">Engineering Program</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+
+        <div class="cert-card glass">
+          <div class="cert-icon"><i class="fas fa-users"></i></div>
+          <div class="cert-body">
+            <h3>Class Representative</h3>
+            <p>Coordinating academic activities for the batch</p>
+            <span class="cert-year">Leadership Role</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Publications</span>
+        <h2 class="section-title">Research &amp; Publications</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Peer-reviewed research accepted at international conferences</p>
+      </div>
+      <div class="pub-list reveal">
+
+        <div class="pub-card glass">
+          <div class="pub-number">01</div>
+          <div class="pub-content">
+            <div class="pub-badge springer"><i class="fas fa-book-open"></i> Springer · ICSCI 2025</div>
+            <h3 class="pub-title">Autogen and Python-based model to Reduce Traffic Congestion using Flexi-Lane Concept</h3>
+            <p class="pub-desc">Proposes an AutoGen-powered multi-agent agentic framework for adaptive Flexi-Lane traffic management, demonstrating significant congestion reduction through dynamic lane reallocation strategies.</p>
+            <div class="pub-meta">
+              <span class="pub-conf"><i class="fas fa-university"></i> International Conference on Soft Computing and Its Engineering Applications (ICSCI 2025)</span>
+              <span class="pub-status accepted"><i class="fas fa-check-circle"></i> Published</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card glass">
+          <div class="pub-number">02</div>
+          <div class="pub-content">
+            <div class="pub-badge aiei"><i class="fas fa-microscope"></i> AIEI 2026</div>
+            <h3 class="pub-title">Deep Learning-Based Multi Class Retinal Image Classification From Fundus Images</h3>
+            <p class="pub-desc">Presents a high-performance ResNet50 backbone augmented with CBAM, SE, SimAM and ECA visual attention mechanisms for multi-class retinal disease classification. Benchmarked against MobileNet_v2 and DenseNet201, achieving superior clinical localization.</p>
+            <div class="pub-meta">
+              <span class="pub-conf"><i class="fas fa-university"></i> International Conference on Artificial Intelligence in Education (AIEI 2026)</span>
+              <span class="pub-status accepted"><i class="fas fa-check-circle"></i> Published</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">07 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">I'm actively seeking placement opportunities. Let's talk!</p>
+      </div>
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <a href="mailto:snehinrao1930@gmail.com" class="contact-card glass">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-card-body">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">snehinrao1930@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/snehin-rao-b8174728a/" target="_blank" rel="noopener" class="contact-card glass">
+            <div class="contact-card-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-card-body">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/snehin-rao-b8174728a</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener" class="contact-card glass">
+            <div class="contact-card-icon github"><i class="fab fa-github"></i></div>
+            <div class="contact-card-body">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/RaoSnehin</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="tel:+919346101099" class="contact-card glass">
+            <div class="contact-card-icon phone"><i class="fas fa-phone"></i></div>
+            <div class="contact-card-body">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 9346101099</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+        <div class="contact-form glass">
+          <h3>Send a Message</h3>
+          <p class="form-note">Your message will be sent directly to <strong>snehinrao1930@gmail.com</strong></p>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="sender-name">Your Name</label>
+              <input type="text" id="sender-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="sender-email">Your Email</label>
+              <input type="email" id="sender-email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Snehin, I'd love to discuss an opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submit-btn">
+              <span id="btn-text">Send Message</span>
+              <i class="fas fa-paper-plane" id="btn-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>SR<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Crafted with <span class="heart">♥</span> by Snehin Rao · 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/RaoSnehin" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/snehin-rao-b8174728a/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:snehinrao1930@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
